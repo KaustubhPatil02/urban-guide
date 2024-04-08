@@ -4,8 +4,8 @@ import ActiveStatus from './components/ActiveStatus'
 import ToasterContext from './context/ToasterContext'
 
 export const metadata = {
-  title: 'StrayAidConnect-Chatrooms',
-  description: 'Chatroom App for stray aid connect',
+  title: 'Messenger',
+  description: 'Messenger Clone',
 }
 
 export default function RootLayout({
