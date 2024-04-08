@@ -1,57 +1,28 @@
-# Real-Time Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher (2023)
-
-![Copy of Copy of Fullstack Twitter Clone (1)](https://user-images.githubusercontent.com/23248726/236631198-90414da5-ee43-46a9-8898-70b003bcd83d.png)
+### Tech Stack used
 
 
-This is a repository for a Real-Time Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher.
+```js
+Front-end:
+    Nextjs Framework
+    Typescript
+    TailwindCss
+    React-Icons library
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=PGPGcKBpAk8)
+Back-end:
+    Prisma
+    Prisma for db schema design
+    Mongodb for backend connectivity
 
-Master the art of building a real-time Messenger clone using the latest web development technologies. In this comprehensive tutorial, we'll walk you through the process of creating a fully-functional and visually stunning chat application that rivals the best in the industry.
+API's:
+  -Google oAuth
+  -Cloudinary
+  -NextAuth
+  -Pusher (for sending messages between clients)
 
-Key Features:
-
-- Real-time messaging using Pusher
-- Message notifications and alerts
-- Tailwind design for sleek UI
-- Tailwind animations and transition effects
-- Full responsiveness for all devices
-- Credential authentication with NextAuth
-- Google authentication integration
-- Github authentication integration
-- File and image upload using Cloudinary CDN
-- Client form validation and handling using react-hook-form
-- Server error handling with react-toast
-- Message read receipts
-- Online/offline user status
-- Group chats and one-on-one messaging
-- Message attachments and file sharing
-- User profile customization and settings
-- How to write POST, GET, and DELETE routes in route handlers (app/api)
-- How to fetch data in server React components by directly accessing the database (WITHOUT API! like Magic!)
-- Handling relations between Server and Child components in a real-time environment
-- Creating and managing chat rooms and channels
-
-Whether you're an experienced developer looking to expand your skillset or a beginner eager to learn the latest web development technologies, this tutorial has something for everyone. Join us on this exciting journey and take your web development skills to new heights!
-
-
-### Prerequisites
-
-**Node version 14.x**
-
-### Cloning the repository
-
-```shell
-git clone https://github.com/AntonioErdeljac/next13-messenger.git
+Twilio (sms)
+Twilio client
 ```
-
-### Install packages
-
-```shell
-npm i
-```
-
-### Setup .env file
+  ### Setup .env file
 
 
 ```js
@@ -64,9 +35,6 @@ PUSHER_SECRET=
 
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
 
-GITHUB_ID=
-GITHUB_SECRET=
-
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 ```
@@ -77,17 +45,31 @@ GOOGLE_CLIENT_SECRET=
 npx prisma db push
 
 ```
-
-### Start the app
-
-```shell
-npm run dev
+Url's for setup API keys and secret in .env
+```
+https://pusher.com/ - pusher
+https://cloudinary.com/ -image upload cloudinary
+https://console.cloud.google.com/apis/credentials - oauth sigin google
+https://cloud.mongodb.com/ - database
 ```
 
-## Available commands
+Key Features:
 
-Running commands with npm `npm run [command]`
-
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+- Real-time messaging using Pusher
+- Message notifications and alerts
+- Tailwind animations and transition effects
+- Tailwind design for sleek UI
+- Full responsiveness for all devices
+- Google authentication integration
+- Credential authentication with NextAuth
+- File and image upload using Cloudinary CDN
+- Client form validation and handling using react-hook-form
+- Server error handling with react-toast
+- Online/offline user status
+- Message read receipts
+- Message attachments and file sharing
+- Group chats and one-on-one messaging
+- Creating and managing chat rooms and channels
+- User profile customization and settings
+- Sms functionality using twilio
+- pin a message etc, soon to be implemented 
