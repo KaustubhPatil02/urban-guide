@@ -4,6 +4,7 @@ import axios from "axios";
 import { signIn, useSession } from 'next-auth/react';
 import { useCallback, useEffect, useState } from 'react';
 import { BsGithub, BsGoogle } from 'react-icons/bs';
+import { FcGoogle } from "react-icons/fc";
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { useRouter } from "next/navigation";
 
@@ -182,7 +183,7 @@ const AuthForm = () => {
           <div className="mt-6 flex gap-2">
 
             <AuthSocialButton
-              icon={BsGoogle}
+              icon={FcGoogle}
               onClick={() => socialAction('google')}
             />
           </div>
