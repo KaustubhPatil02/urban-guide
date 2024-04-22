@@ -24,7 +24,7 @@ const Auth = () => {
             text-3xl 
             font-bold 
             tracking-tight 
-            text-gray-300
+            text-white
           "
           >
             StrayAidConnect-chatrooms

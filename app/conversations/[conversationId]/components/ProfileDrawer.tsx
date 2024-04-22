@@ -12,7 +12,6 @@ import useActiveList from '@/app/hooks/useActiveList';
 import Avatar from '@/app/components/Avatar';
 import AvatarGroup from '@/app/components/AvatarGroup';
 import ConfirmModal from './ConfirmModal';
-import GroupChatModal from '@/app/components/modals/GroupChatModal';
 
 interface ProfileDrawerProps {
   isOpen: boolean;
@@ -197,11 +196,6 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                     {joinedDate}
                                   </time>
                                 </dd>
-                                {/* <GroupChatModal
-                                 users={users} 
-                                 isOpen={isModalOpen} 
-                                 onClose={() => setIsModalOpen(false)}
-                                /> */}
                               </div>
                             </>
                           )}

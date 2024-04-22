@@ -5,7 +5,7 @@ import ToasterContext from './context/ToasterContext'
 
 export const metadata = {
   title: 'Chatrooms-StrayAidConnect',
-  description: 'A chatroom application for StrayAidConnect users',
+  description: 'A chatroom application for StrayAidConnect users'
 }
 
 export default function RootLayout({
